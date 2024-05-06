@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dickson4954/code-challeng-2-bot-battlr-/static/css/main.5dc98c0b.css",
+    "main.js": "/dickson4954/code-challeng-2-bot-battlr-/static/js/main.bb4024e5.js",
+    "static/js/453.52e1f0e5.chunk.js": "/dickson4954/code-challeng-2-bot-battlr-/static/js/453.52e1f0e5.chunk.js",
+    "index.html": "/dickson4954/code-challeng-2-bot-battlr-/index.html",
+    "main.5dc98c0b.css.map": "/dickson4954/code-challeng-2-bot-battlr-/static/css/main.5dc98c0b.css.map",
+    "main.bb4024e5.js.map": "/dickson4954/code-challeng-2-bot-battlr-/static/js/main.bb4024e5.js.map",
+    "453.52e1f0e5.chunk.js.map": "/dickson4954/code-challeng-2-bot-battlr-/static/js/453.52e1f0e5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5dc98c0b.css",
+    "static/js/main.bb4024e5.js"
+  ]
+}
