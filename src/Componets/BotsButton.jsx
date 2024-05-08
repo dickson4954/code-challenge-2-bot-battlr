@@ -2,12 +2,12 @@
 
 function BotsButton({ id, onDelete }) {
     function handleClick() {
-        fetch(`http://localhost:3000/bots/${id}`, {
+        fetch(`https://code-challeng-2-bot-battlr.onrender.com/bots/${id}`, {
             method: 'DELETE'
         })
         .then(response => response.json())
         .then(data => {
-            onDelete(id);
+            onDelete(data);
         })
         
     }

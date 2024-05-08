@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import { useState,useEffect } from "react"
 import { Link } from "react-router-dom"
-import BotNav from "./BotNav"
+
 
 
 
@@ -10,7 +10,7 @@ function BotCollection(){
 const [bot,setBots] = useState({})
 
 useEffect(()=>{
-    fetch(`http://localhost:3000/bots/${id}`)
+    fetch(`https://code-challeng-2-bot-battlr.onrender.com/bots/${id}`)
     .then((res)=>res.json())
     .then(data=>{
         setBots(data)
@@ -46,8 +46,8 @@ useEffect(()=>{
                                   <p className="card-text">Updated At: {bot.updated_at}</p>
                                   
                                   
-                              
-                                        <Link to="/">
+                                  
+                                        <Link to="/code-challenge-2-bot-battlr">
                                               <button className="btn btn-primary btn-sm m-2">Go Back</button>
                                               
                                         </Link>

@@ -7,6 +7,7 @@ function BotNav({ army, removeFromArmy }) {
   };
 
   const displayedArmy = army.slice(0, 4);
+  
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">

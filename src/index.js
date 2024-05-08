@@ -9,11 +9,11 @@ import BotCollection from './Componets/BotCollection';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/code-challenge-2-bot-battlr",
     element: <App />
   },
   {
-    path: "/Bots/:id",
+    path: "/code-challenge-2-bot-battlr/Bots/:id",
     element: <BotCollection />
 
   }

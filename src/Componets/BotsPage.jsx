@@ -1,12 +1,14 @@
 import React,{useState,useEffect} from "react";
 import BotsButton from "./BotsButton";
 import BotNav from "./BotNav";
+import { Link } from "react-router-dom";
 function BotsPage(){
     const [bots, setBots] = useState([])
     const [enlistedBots, setEnlistedBots] = useState([]);
+
     
     function fetchData(){
-        return fetch("http://localhost:3000/bots")
+        return fetch("https://code-challeng-2-bot-battlr.onrender.com/bots/")
         .then((res) => res.json())
         .then ((data)=>{
             setBots(data)
@@ -42,10 +44,10 @@ function BotsPage(){
                     {bots.map(bot=>(
                         <div key={bot.id} className="col-sm-3 mb-4">
                             <div className="card">
-                                <a href={`/Bots/${bot.id}`}>
+                                <Link to={`/code-challenge-2-bot-battlr/Bots/${bot.id}`}>
                                     
                                 <img src={bot.avatar_url} className="card-img-top" alt="avatar"/>                     
-                                   </a>
+                                   </Link>
                                <div className="card-body">
                                     <h5 className="card-title">Name:{bot.name}</h5>
                                     <p className="card-text"> Created At: {bot.created_at}</p>
